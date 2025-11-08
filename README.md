@@ -66,7 +66,7 @@ transformer-from-scratch/
 
 ## 🏃 运行与复现实验
 
-PDF 明确要求提供**包含随机种子**的精确复现命令行。我们通过 shell 脚本提供。
+要求提供**包含随机种子**的精确复现命令行，故实验采用种子42。
 
 #### 1\. 主实验 (基线 vs. 消融)
 
@@ -94,7 +94,6 @@ chmod +x scripts/run_sensitivity.sh
 
 ## 📊 预期结果
 
-所有实验完成后，请检查 `results/` 目录：
 
 1.  **`results/tables/experiment_summary.md`**: 此文件将包含一个 Markdown 表格，量化对比所有运行（基线、消融、敏感性）的最终 PPL 和 BLEU 分数。
 2.  **`results/training_curves/`**: 此目录将包含所有实验的 `_loss_curve.png` 文件，可视化地展示训练过程。
